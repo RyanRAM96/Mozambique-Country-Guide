@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Wildlife of Mozambique · Mozambique Country Guide</title>
+  <meta name="description" content="Mozambique's national parks and reserves, its savanna, wetland, marine and mountain wildlife, and the recovery of Gorongosa National Park." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 30 20%22><rect width=%2230%22 height=%226.2%22 fill=%22%23007168%22/><rect y=%226.2%22 width=%2230%22 height=%227.6%22 fill=%22%23fff%22/><rect y=%226.9%22 width=%2230%22 height=%226.2%22 fill=%22%23000%22/><rect y=%2213.8%22 width=%2230%22 height=%226.2%22 fill=%22%23fce100%22/><path d=%22M0 0L14 10L0 20Z%22 fill=%22%23d21034%22/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="wildlife">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Mozambique Country Guide, home">
+        <svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="var(--flag-white)"/><rect width="30" height="6.2" fill="var(--flag-green)"/><rect y="6.9" width="30" height="6.2" fill="var(--flag-black)"/><rect y="13.8" width="30" height="6.2" fill="var(--flag-yellow)"/><path d="M0 0L14 10L0 20Z" fill="var(--flag-red)"/><path d="M4.6 7.4l.8 1.7 1.9.2-1.4 1.3.4 1.9-1.7-1-1.7 1 .4-1.9-1.4-1.3 1.9-.2z" fill="var(--flag-yellow)"/></svg>
+        <span>Mozambique<small>Country guide</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav"><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>Menu</button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="history.html" data-page="history">History</a></li>
+          <li><a href="geography.html" data-page="geography">Geography</a></li>
+          <li><a href="wildlife.html" data-page="wildlife">Wildlife</a></li>
+          <li><a href="languages.html" data-page="languages">Languages</a></li>
+          <li><a href="peoples.html" data-page="peoples">Peoples &amp; Culture</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="capulana" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap page-head-grid">
+        <div>
+          <span class="label">Wildlife</span>
+          <h1>Miombo, mangrove and reef</h1>
+          <p class="lede">Mozambique's wildlife was badly hit by decades of war and poaching, but its parks are recovering. It has vast miombo woodland, some of Africa's richest coral reefs and seagrass beds, and mountain forests that still hold species new to science.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Bird species</dt><dd>More than 700<small>Including migrants from Europe and Asia in the wet season</small></dd></div>
+          <div><dt>Sea turtles</dt><dd>5 of the world's 7 species<small>Found in Mozambican waters</small></dd></div>
+          <div><dt>Largest reserve</dt><dd>Niassa, about 42,000 km²<small>Roughly the size of Switzerland</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Parks -->
+    <section class="section" aria-labelledby="parks-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Protected areas</span>
+          <h2 id="parks-h">Parks and reserves</h2>
+          <p>Hover over a pin or a card to link the two, or select a pin to jump to its description.</p>
+        </div>
+        <div class="map-layout">
+          <figure style="margin:0; position:sticky; top:calc(env(safe-area-inset-top, 0px) + 84px)">
+            <div id="parkMap"></div>
+            <figcaption class="map-legend">
+              <span><i class="pk"></i>Land park or reserve</span>
+              <span><i class="mr"></i>Marine, lake or coastal</span>
+            </figcaption>
+          </figure>
+          <div class="stack">
+            <article class="card is-linked" data-park="niassa" data-ll="37.6,-12.1" data-kind="land" data-short="Niassa">
+              <div class="meta"><span>Niassa &amp; Cabo Delgado</span><span>Since 1954</span></div>
+              <h3>Niassa Reserve</h3>
+              <p>One of the largest protected areas in Africa, a wilderness of miombo woodland and granite inselbergs cut by the Lugenda river. It holds one of the continent's largest remaining populations of lions and African wild dogs, along with sable antelope and the Niassa wildebeest. Poaching cut its elephant herds sharply in the 2010s.</p>
+            </article>
+            <article class="card is-linked" data-park="lake" data-ll="34.72,-12.5" data-kind="marine" data-short="L. Niassa" data-anchor="end" data-dx="-9">
+              <div class="meta"><span>Niassa</span><span>Since 2011</span></div>
+              <h3>Lake Niassa Reserve</h3>
+              <p>Mozambique's share of Lake Niassa, with clear water, rocky shores and hundreds of species of cichlid fish found in no other lake on Earth.</p>
+            </article>
+            <article class="card is-linked" data-park="quirimbas" data-ll="40.35,-12.3" data-kind="marine" data-short="Quirimbas" data-anchor="end" data-dx="-4" data-dy="17">
+              <div class="meta"><span>Cabo Delgado</span><span>Since 2002</span></div>
+              <h3>Quirimbas National Park</h3>
+              <p>Coastal forest on the mainland and the southern islands of the Quirimbas Archipelago, with coral reefs, seagrass and mangroves. A UNESCO biosphere reserve since 2018.</p>
+            </article>
+            <article class="card is-linked" data-park="mabu" data-ll="36.4,-16.29" data-kind="land" data-short="Mt Mabu">
+              <div class="meta"><span>Zambézia</span><span>Mountain forest</span></div>
+              <h3>Mount Mabu, the "Google forest"</h3>
+              <p>In 2005 a Kew scientist spotted an unexpected patch of dark green on Google Earth. Expeditions from 2008 found one of the largest mid-altitude rainforests in southern Africa and species new to science, including butterflies, a pygmy chameleon and a forest viper.</p>
+            </article>
+            <article class="card is-linked" data-park="gorongosa" data-ll="34.4,-18.9" data-kind="land" data-short="Gorongosa">
+              <div class="meta"><span>Sofala</span><span>Since 1960</span></div>
+              <h3>Gorongosa National Park</h3>
+              <p>Floodplains, lake and woodland on the floor of the Great Rift Valley, overlooked by Mount Gorongosa. Once one of Africa's great parks, it lost most of its large animals in the civil war and is now one of the continent's best-known recoveries.</p>
+            </article>
+            <article class="card is-linked" data-park="marromeu" data-ll="35.9,-18.3" data-kind="land" data-short="Marromeu">
+              <div class="meta"><span>Sofala</span><span>Zambezi Delta</span></div>
+              <h3>Marromeu Reserve</h3>
+              <p>Grassy floodplains, swamp and mangrove at the mouth of the Zambezi, listed as a wetland of international importance. It once held one of Africa's largest buffalo herds and is a stronghold of the wattled crane.</p>
+            </article>
+            <article class="card is-linked" data-park="chimanimani" data-ll="33.05,-19.8" data-kind="land" data-short="Chimanimani" data-anchor="end" data-dx="-9">
+              <div class="meta"><span>Manica</span><span>National park since 2020</span></div>
+              <h3>Chimanimani National Park</h3>
+              <p>Quartzite mountains on the Zimbabwe border rising to Monte Binga, the country's highest peak, with montane grassland, ancient rock paintings and many plants found nowhere else.</p>
+            </article>
+            <article class="card is-linked" data-park="bazaruto" data-ll="35.47,-21.7" data-kind="marine" data-short="Bazaruto">
+              <div class="meta"><span>Inhambane</span><span>Since 1971</span></div>
+              <h3>Bazaruto Archipelago National Park</h3>
+              <p>Dune islands, seagrass meadows and reefs off Vilankulo. Home to the last viable population of dugongs on the East African coast, plus turtles, dolphins and hundreds of species of reef fish.</p>
+            </article>
+            <article class="card is-linked" data-park="tofo" data-ll="35.54,-23.85" data-kind="marine" data-short="Tofo">
+              <div class="meta"><span>Inhambane</span><span>Coastal waters</span></div>
+              <h3>Tofo and the Inhambane coast</h3>
+              <p>Not a park, but known worldwide for swimming with whale sharks and diving with reef manta rays close to shore. Humpback whales pass along the coast from July to October.</p>
+            </article>
+            <article class="card is-linked" data-park="limpopo" data-ll="32.1,-23.2" data-kind="land" data-short="Limpopo NP">
+              <div class="meta"><span>Gaza</span><span>Since 2001</span></div>
+              <h3>Limpopo National Park</h3>
+              <p>Part of the Great Limpopo Transfrontier Park, shared with South Africa's Kruger and Zimbabwe's Gonarezhou. Sections of the fence with Kruger were taken down so that elephants and other animals could move freely.</p>
+            </article>
+            <article class="card is-linked" data-park="maputo" data-ll="32.8,-26.5" data-kind="marine" data-short="Maputo NP">
+              <div class="meta"><span>Maputo</span><span>Reserve 1932, national park 2021</span></div>
+              <h3>Maputo National Park</h3>
+              <p>Coastal lakes, swamp forest and wild beaches running to the South African border, first protected for its coastal elephants. Loggerhead and leatherback turtles nest on its beaches in the summer months.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gorongosa feature -->
+    <section class="section" aria-labelledby="goro-h">
+      <div class="wrap">
+        <div class="feature">
+          <span class="label">A park brought back</span>
+          <h2 id="goro-h">Gorongosa's recovery</h2>
+          <div class="split">
+            <div class="stack">
+              <p>In the 1960s and early 1970s Gorongosa was one of the most celebrated parks in Africa. During the civil war, fighting passed through it and soldiers on both sides hunted its animals for meat and ivory. By the late 1990s, surveys found that more than 90% of its large mammals had gone.</p>
+              <p>In 2008 the Mozambican government and the Gorongosa Project, founded by the American philanthropist Greg Carr, agreed a long-term partnership to restore the park. Rangers stopped most poaching, animals were brought back from elsewhere, and the park invested in schools, health care and coffee growing on Mount Gorongosa for the communities around it.</p>
+              <p>Aerial counts now find more than 100,000 large herbivores. Waterbuck are the most numerous; African wild dogs were reintroduced in 2018, and lions and leopards have returned.</p>
+            </div>
+            <div class="stack">
+              <aside class="callout">
+                <span class="label">Evolution under fire</span>
+                <h3>The tuskless elephants</h3>
+                <p>Poachers killed elephants with tusks and left the rare tuskless ones alive. After the war, about half of Gorongosa's surviving females were naturally tuskless, compared with under a fifth before it. A 2021 study in the journal <em>Science</em> traced the trait to genes on the X chromosome, a clear example of rapid evolution caused by people.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Species -->
+    <section class="section" aria-labelledby="species-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Species</span>
+          <h2 id="species-h">Animals to know</h2>
+          <p>Where a card shows a threat status, it is the species' global assessment on the IUCN Red List.</p>
+        </div>
+        <div class="filter-bar" data-filter-for="species" data-noun="species" role="group" aria-label="Filter species by habitat">
+          <div class="chips">
+            <button type="button" class="chip" data-value="all">All</button>
+            <button type="button" class="chip" data-value="savanna">Savanna &amp; woodland</button>
+            <button type="button" class="chip" data-value="wetland">Rivers &amp; wetlands</button>
+            <button type="button" class="chip" data-value="ocean">Ocean &amp; coast</button>
+            <button type="button" class="chip" data-value="mountain">Mountains &amp; forest</button>
+            <button type="button" class="chip" data-value="bird">Birds</button>
+          </div>
+          <span class="count" data-filter-count aria-live="polite"></span>
+        </div>
+        <div class="grid" id="species">
+          <article class="card" data-tags="savanna">
+            <div class="meta"><span>Endangered</span><span>Loxodonta africana</span></div>
+            <h3>African savanna elephant</h3>
+            <p>Found in Niassa, Gorongosa, Limpopo and Maputo national parks. Maputo's coastal herd was the reason the reserve was created in 1932.</p>
+          </article>
+          <article class="card" data-tags="savanna">
+            <div class="meta"><span>Vulnerable</span><span>Panthera leo</span></div>
+            <h3>Lion</h3>
+            <p>Niassa holds one of the largest lion populations left in Africa. In Gorongosa a handful of survivors of the war have grown into a thriving population.</p>
+          </article>
+          <article class="card" data-tags="savanna">
+            <div class="meta"><span>Endangered</span><span>Lycaon pictus</span></div>
+            <h3>African wild dog</h3>
+            <p>Packs roam Niassa, and wild dogs returned to Gorongosa in 2018 after decades of absence, now breeding successfully.</p>
+          </article>
+          <article class="card" data-tags="savanna">
+            <div class="meta"><span>Least concern</span><span>Hippotragus niger</span></div>
+            <h3>Sable antelope</h3>
+            <p>A striking black antelope with long curved horns, typical of the miombo woodland of Niassa and the centre.</p>
+          </article>
+          <article class="card" data-tags="savanna">
+            <div class="meta"><span>Subspecies</span><span>Connochaetes taurinus johnstoni</span></div>
+            <h3>Niassa wildebeest</h3>
+            <p>A wildebeest with a white chevron across its face, found in the Niassa Reserve and southern Tanzania.</p>
+          </article>
+          <article class="card" data-tags="savanna">
+            <div class="meta"><span>Vulnerable</span><span>Smutsia temminckii</span></div>
+            <h3>Temminck's ground pangolin</h3>
+            <p>A scaly anteater, heavily trafficked for its scales. Pangolins rescued from smugglers are rehabilitated and released in Gorongosa.</p>
+          </article>
+          <article class="card" data-tags="wetland savanna">
+            <div class="meta"><span>Least concern</span><span>Kobus ellipsiprymnus</span></div>
+            <h3>Waterbuck</h3>
+            <p>Now the most numerous large animal in Gorongosa, grazing the Urema floodplain in tens of thousands.</p>
+          </article>
+          <article class="card" data-tags="wetland">
+            <div class="meta"><span>Vulnerable</span><span>Hippopotamus amphibius</span></div>
+            <h3>Hippopotamus</h3>
+            <p>Common in the Zambezi, Lake Urema and the coastal lakes of Maputo National Park.</p>
+          </article>
+          <article class="card" data-tags="wetland">
+            <div class="meta"><span>Least concern</span><span>Crocodylus niloticus</span></div>
+            <h3>Nile crocodile</h3>
+            <p>Found in most large rivers and lakes, including Cahora Bassa. Conflicts with people at river crossings are a real danger.</p>
+          </article>
+          <article class="card" data-tags="wetland savanna">
+            <div class="meta"><span>Near threatened</span><span>Syncerus caffer</span></div>
+            <h3>African buffalo</h3>
+            <p>The Zambezi Delta around Marromeu once held one of Africa's largest herds, and numbers there have been recovering.</p>
+          </article>
+          <article class="card" data-tags="ocean">
+            <div class="meta"><span>Vulnerable</span><span>Dugong dugon</span></div>
+            <h3>Dugong</h3>
+            <p>A seagrass-grazing relative of the manatee. Bazaruto holds the last viable population on the East African coast, which is itself assessed as critically endangered.</p>
+          </article>
+          <article class="card" data-tags="ocean">
+            <div class="meta"><span>Endangered</span><span>Rhincodon typus</span></div>
+            <h3>Whale shark</h3>
+            <p>The largest fish in the sea, a filter-feeder often seen close to shore off Tofo and the Inhambane coast.</p>
+          </article>
+          <article class="card" data-tags="ocean">
+            <div class="meta"><span>Vulnerable</span><span>Mobula alfredi</span></div>
+            <h3>Reef manta ray</h3>
+            <p>Visits cleaning stations on the reefs off Tofo, where small fish pick parasites from its skin.</p>
+          </article>
+          <article class="card" data-tags="ocean">
+            <div class="meta"><span>Least concern</span><span>Megaptera novaeangliae</span></div>
+            <h3>Humpback whale</h3>
+            <p>Humpbacks swim up from Antarctic feeding grounds to breed and calve off Mozambique between July and October.</p>
+          </article>
+          <article class="card" data-tags="ocean">
+            <div class="meta"><span>Vulnerable</span><span>Caretta caretta</span></div>
+            <h3>Loggerhead turtle</h3>
+            <p>Nests on the beaches of Maputo National Park alongside the leatherback, the largest turtle in the world.</p>
+          </article>
+          <article class="card" data-tags="mountain bird">
+            <div class="meta"><span>Endemic</span><span>Apalis lynesi</span></div>
+            <h3>Namuli apalis</h3>
+            <p>A small warbler found only in the forest patches of Mount Namuli, and nowhere else on Earth.</p>
+          </article>
+          <article class="card" data-tags="mountain">
+            <div class="meta"><span>Endemic</span><span>Rhampholeon</span></div>
+            <h3>Pygmy chameleons</h3>
+            <p>Tiny leaf-litter chameleons, a few centimetres long. Mount Mabu and other isolated mountains in Mozambique each have their own species.</p>
+          </article>
+          <article class="card" data-tags="bird wetland">
+            <div class="meta"><span>Vulnerable</span><span>Grus carunculata</span></div>
+            <h3>Wattled crane</h3>
+            <p>A tall crane of open floodplains. The Zambezi Delta is one of its most important homes in Africa.</p>
+          </article>
+          <article class="card" data-tags="bird savanna">
+            <div class="meta"><span>Vulnerable</span><span>Bucorvus leadbeateri</span></div>
+            <h3>Southern ground hornbill</h3>
+            <p>A large black bird with a red face that walks the grassland in family groups; its booming call carries for kilometres.</p>
+          </article>
+          <article class="card" data-tags="bird wetland">
+            <div class="meta"><span>Least concern</span><span>Haliaeetus vocifer</span></div>
+            <h3>African fish eagle</h3>
+            <p>Perched above rivers and lakes across the country. Its ringing cry is one of the classic sounds of Africa.</p>
+          </article>
+        </div>
+        <p class="empty" id="species-empty" hidden>No species match this habitat.</p>
+      </div>
+    </section>
+
+    <!-- Seasons -->
+    <section class="section" aria-labelledby="seasons-h">
+      <div class="wrap split">
+        <div class="stack">
+          <span class="label">Seasons</span>
+          <h2 id="seasons-h">When to see what</h2>
+          <p class="prose">Timings shift from year to year and between north and south, so treat these as rough guides.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Sight</th><th><div class="season-head" aria-hidden="true"><span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div></th></tr></thead>
+            <tbody>
+              <tr><td><strong>Big game at waterholes</strong><br />Dry season</td><td><div class="season" role="img" aria-label="May to October"><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></td></tr>
+              <tr><td><strong>Humpback whales</strong></td><td><div class="season" role="img" aria-label="July to October"><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></td></tr>
+              <tr><td><strong>Turtles nesting and hatching</strong></td><td><div class="season" role="img" aria-label="November to March"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i></div></td></tr>
+              <tr><td><strong>Migrant birds</strong><br />From Europe and Asia</td><td><div class="season" role="img" aria-label="November to April"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i></div></td></tr>
+              <tr><td><strong>Whale sharks and mantas</strong></td><td><div class="season" role="img" aria-label="All year"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <nav class="next-page" aria-label="More pages">
+        <a href="geography.html"><span>Previous</span>← Geography</a>
+        <a href="languages.html" style="text-align:right"><span>Next</span>Languages →</a>
+      </nav>
+    </div>
+  </main>
+
+  <div class="capulana thin" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <h2>Mozambique Country Guide</h2>
+        <p>An independent, non-commercial guide to the history, land, wildlife, languages and peoples of Mozambique.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="history.html">History</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a href="wildlife.html">Wildlife</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="peoples.html">Peoples &amp; Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About the data</h3>
+        <p>Province boundaries: geoBoundaries (CC BY 4.0). Rivers, lakes and neighbouring countries: Natural Earth. Language figures: 2017 national census. Population figures are rounded estimates.</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">Kanimambo · Koxukhuru · Obrigado for reading.</div>
+  </footer>
+
+  <script src="map-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

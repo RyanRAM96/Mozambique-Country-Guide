@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Geography of Mozambique · Mozambique Country Guide</title>
+  <meta name="description" content="Mozambique's provinces, landforms, rivers, climate, coast and natural resources, with an interactive province map." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 30 20%22><rect width=%2230%22 height=%226.2%22 fill=%22%23007168%22/><rect y=%226.2%22 width=%2230%22 height=%227.6%22 fill=%22%23fff%22/><rect y=%226.9%22 width=%2230%22 height=%226.2%22 fill=%22%23000%22/><rect y=%2213.8%22 width=%2230%22 height=%226.2%22 fill=%22%23fce100%22/><path d=%22M0 0L14 10L0 20Z%22 fill=%22%23d21034%22/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="geography">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Mozambique Country Guide, home">
+        <svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="var(--flag-white)"/><rect width="30" height="6.2" fill="var(--flag-green)"/><rect y="6.9" width="30" height="6.2" fill="var(--flag-black)"/><rect y="13.8" width="30" height="6.2" fill="var(--flag-yellow)"/><path d="M0 0L14 10L0 20Z" fill="var(--flag-red)"/><path d="M4.6 7.4l.8 1.7 1.9.2-1.4 1.3.4 1.9-1.7-1-1.7 1 .4-1.9-1.4-1.3 1.9-.2z" fill="var(--flag-yellow)"/></svg>
+        <span>Mozambique<small>Country guide</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav"><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>Menu</button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="history.html" data-page="history">History</a></li>
+          <li><a href="geography.html" data-page="geography">Geography</a></li>
+          <li><a href="wildlife.html" data-page="wildlife">Wildlife</a></li>
+          <li><a href="languages.html" data-page="languages">Languages</a></li>
+          <li><a href="peoples.html" data-page="peoples">Peoples &amp; Culture</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="capulana" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap page-head-grid">
+        <div>
+          <span class="label">Geography</span>
+          <h1>A long country facing the sea</h1>
+          <p class="lede">Mozambique stretches nearly 2,000 km from the Rovuma river in the north to the South African border, between the high plateaus of the interior and the warm Mozambique Channel. Rivers from half a dozen countries cross it to reach the Indian Ocean.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Latitude</dt><dd>10°27′ S to 26°52′ S</dd></div>
+          <div><dt>Neighbours</dt><dd>6 countries<small>Tanzania, Malawi, Zambia, Zimbabwe, South Africa, Eswatini</small></dd></div>
+          <div><dt>Across the channel</dt><dd>Madagascar<small>About 400 km away at the narrowest point</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Interactive map -->
+    <section class="section" aria-labelledby="map-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Interactive map</span>
+          <h2 id="map-h">Ten provinces and a capital city</h2>
+          <p>Select a province on the map or from the list to read about it. Provinces are shaded by the three regions Mozambicans use when they talk about the country: north, centre and south.</p>
+        </div>
+        <div class="map-layout">
+          <div>
+            <div class="map-controls" role="group" aria-label="Map layers">
+              <label class="toggle"><input type="checkbox" id="toggleRegions" checked /> Shade regions</label>
+              <label class="toggle"><input type="checkbox" id="toggleCities" checked /> Cities</label>
+              <label class="toggle"><input type="checkbox" id="toggleRivers" checked /> Rivers &amp; lakes</label>
+            </div>
+            <figure style="margin:0">
+              <div id="provinceMap" class="map"></div>
+              <figcaption class="map-legend">
+                <span><i class="swatch north"></i>North</span>
+                <span><i class="swatch centre"></i>Centre</span>
+                <span><i class="swatch south"></i>South</span>
+                <span><i class="st"></i>Capital</span>
+                <span><i class="ct"></i>Provincial capital</span>
+                <span><i class="ln"></i>River</span>
+              </figcaption>
+            </figure>
+          </div>
+          <aside class="prov-panel" id="provPanel" aria-live="polite">
+            <span class="label"><i class="swatch centre" data-f="swatch"></i> <span data-f="region">Centre region</span></span>
+            <h3 data-f="name">Sofala</h3>
+            <p data-f="text">Named after the medieval gold port on its coast.</p>
+            <dl class="facts">
+              <div><dt>Capital</dt><dd data-f="capital">Beira</dd></div>
+              <div><dt>Area</dt><dd data-f="area">68,018 km²</dd></div>
+              <div><dt>Share of country</dt><dd data-f="share">8.5%</dd></div>
+              <div><dt>Main peoples</dt><dd data-f="peoples">Sena, Ndau</dd></div>
+            </dl>
+            <div class="stack" style="gap:8px">
+              <span class="label">All provinces</span>
+              <div class="prov-list chips" id="provList"></div>
+            </div>
+          </aside>
+        </div>
+
+        <details class="data">
+          <summary>Show all provinces as a table</summary>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Province</th><th>Region</th><th>Capital</th><th class="num">Area (km²)</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Niassa</strong></td><td>North</td><td>Lichinga</td><td class="num">129,056</td></tr>
+                <tr><td><strong>Cabo Delgado</strong></td><td>North</td><td>Pemba</td><td class="num">82,625</td></tr>
+                <tr><td><strong>Nampula</strong></td><td>North</td><td>Nampula</td><td class="num">81,606</td></tr>
+                <tr><td><strong>Zambézia</strong></td><td>Centre</td><td>Quelimane</td><td class="num">105,008</td></tr>
+                <tr><td><strong>Tete</strong></td><td>Centre</td><td>Tete</td><td class="num">100,724</td></tr>
+                <tr><td><strong>Manica</strong></td><td>Centre</td><td>Chimoio</td><td class="num">61,661</td></tr>
+                <tr><td><strong>Sofala</strong></td><td>Centre</td><td>Beira</td><td class="num">68,018</td></tr>
+                <tr><td><strong>Inhambane</strong></td><td>South</td><td>Inhambane</td><td class="num">68,615</td></tr>
+                <tr><td><strong>Gaza</strong></td><td>South</td><td>Xai-Xai</td><td class="num">75,709</td></tr>
+                <tr><td><strong>Maputo Province</strong></td><td>South</td><td>Matola</td><td class="num">26,058</td></tr>
+                <tr><td><strong>Maputo City</strong></td><td>South</td><td>Maputo</td><td class="num">347</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Landforms -->
+    <section class="section" aria-labelledby="land-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Landforms</span>
+          <h2 id="land-h">From coastal plain to mountain</h2>
+          <p>The land rises in steps from the sea towards the western borders. The coastal plain is widest in the south, where it covers almost everything below the Save river; in the north, plateaus come much closer to the coast.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="label">Below 200 m</span>
+            <h3>Coastal lowlands</h3>
+            <p>A broad plain of sandy soils, lagoons, swamps and river floodplains that covers more than 40% of the country. It holds most of the large cities and the fertile lower valleys of the Limpopo, Save and Zambezi.</p>
+          </article>
+          <article class="card">
+            <span class="label">200–1,000 m</span>
+            <h3>Plateaus</h3>
+            <p>Rolling uplands dotted with granite inselbergs, the bare domes of rock that rise from the bush across Nampula and Niassa. Much of this country is covered in miombo woodland.</p>
+          </article>
+          <article class="card">
+            <span class="label">Above 1,000 m</span>
+            <h3>Highlands</h3>
+            <p>The Chimanimani range and Manica highlands on the Zimbabwe border, the Angónia plateau in Tete, the Lichinga plateau in Niassa, and the Namuli massif in Zambézia, which reaches 2,419 m.</p>
+          </article>
+          <article class="card">
+            <span class="label">The rift</span>
+            <h3>End of the Great Rift Valley</h3>
+            <p>The East African Rift reaches its southern end here. Lake Niassa fills one arm of it, and the Urema trough in Gorongosa National Park is another.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rivers -->
+    <section class="section" aria-labelledby="rivers-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Rivers &amp; lakes</span>
+          <h2 id="rivers-h">Where Africa's rivers meet the sea</h2>
+          <p>Around two dozen major rivers cross Mozambique, most of them rising in neighbouring countries. That brings water and fertile silt, but also floods when heavy rain falls upstream.</p>
+        </div>
+        <div class="split">
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>River</th><th>Where</th><th>Why it matters</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Zambezi</strong></td><td>Tete, Zambézia, Sofala</td><td>Africa's fourth-longest river. Dammed at Cahora Bassa, it enters the sea through a wide delta of mangroves and floodplain.</td></tr>
+                <tr><td><strong>Limpopo</strong></td><td>Gaza</td><td>Waters the farmland of the south and caused the great floods of 2000.</td></tr>
+                <tr><td><strong>Rovuma</strong></td><td>Niassa, Cabo Delgado</td><td>Forms most of the border with Tanzania and gives its name to the offshore gas basin.</td></tr>
+                <tr><td><strong>Save</strong></td><td>Sofala, Inhambane, Gaza</td><td>The traditional dividing line between the centre and the south.</td></tr>
+                <tr><td><strong>Lúrio</strong></td><td>Niassa, Nampula, Cabo Delgado</td><td>Marks much of the boundary between Nampula and Cabo Delgado.</td></tr>
+                <tr><td><strong>Púnguè &amp; Búzi</strong></td><td>Manica, Sofala</td><td>Meet the sea at Beira; both flooded badly during Cyclone Idai.</td></tr>
+                <tr><td><strong>Incomáti &amp; Maputo</strong></td><td>Maputo</td><td>Flow into Maputo Bay, around the capital.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="stack">
+            <aside class="callout">
+              <span class="label">Lake</span>
+              <h3>Lake Niassa</h3>
+              <p>Known as Lake Malawi in Malawi, it is one of the deepest lakes in Africa. Mozambique holds part of the eastern shore, a quiet stretch of beaches and fishing villages that has been a protected reserve since 2011. The lake holds hundreds of kinds of brightly coloured cichlid fish found nowhere else.</p>
+            </aside>
+            <aside class="callout">
+              <span class="label">Reservoir</span>
+              <h3>Cahora Bassa</h3>
+              <p>Built by the Portuguese between 1969 and 1974 in a gorge of the Zambezi in Tete, the dam holds back a lake nearly 300 km long. It is one of Africa's largest hydroelectric schemes, and much of its power is sold to South Africa.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Climate -->
+    <section class="section" aria-labelledby="climate-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Climate</span>
+          <h2 id="climate-h">Two seasons and a cyclone belt</h2>
+          <p>The climate is tropical in the north and centre and subtropical in the far south. Rain falls mostly in the hot season, and it is heavier in the north and in the highlands. The interior of Gaza and parts of Tete are the driest regions.</p>
+        </div>
+        <div class="split">
+          <div class="stack">
+            <div class="table-wrap" style="padding:18px">
+              <div class="season-head" aria-hidden="true"><span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
+              <p class="label" style="margin:14px 0 6px">Hot, wet season · roughly November to April</p>
+              <div class="season" role="img" aria-label="Wet season: November to April"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i></div>
+              <p class="label" style="margin:14px 0 6px">Cooler, dry season · roughly May to October</p>
+              <div class="season" role="img" aria-label="Dry season: May to October"><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+              <p class="label" style="margin:14px 0 6px">Cyclone season · November to April, peaking January to March</p>
+              <div class="season" role="img" aria-label="Cyclone season: November to April"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i></div>
+            </div>
+          </div>
+          <div class="prose">
+            <p>Tropical cyclones form over the warm waters of the south-west Indian Ocean and the Mozambique Channel. The long, low coast and the wide river deltas make Mozambique one of the countries most exposed to them. <strong>Idai</strong> (2019) flooded Beira and the Púnguè and Búzi valleys; <strong>Kenneth</strong> (2019) struck Cabo Delgado; <strong>Freddy</strong> (2023) made landfall twice.</p>
+            <p>Droughts are also common, especially in the south, and scientists expect climate change to make both extremes more severe. Mangrove restoration and early warning systems are part of the national response.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coast -->
+    <section class="section" aria-labelledby="coast-h">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Coast &amp; islands</span>
+          <h2 id="coast-h">About 2,470 km of coastline</h2>
+          <p>The north has coral islands and deep bays, the centre has muddy deltas and mangroves, and the south has high dunes, lagoons and long sandy beaches.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="label">Cabo Delgado</span>
+            <h3>Quirimbas Archipelago</h3>
+            <p>Around thirty coral islands strung along the northern coast. Ibo island has a star-shaped fort and a faded colonial town that was once a busy trading port.</p>
+          </article>
+          <article class="card">
+            <span class="label">Nampula</span>
+            <h3>Ilha de Moçambique</h3>
+            <p>A 3 km island joined to the mainland by a long bridge. Its northern half is the old stone town; the southern half, Makuti town, is built of reed and palm thatch. A UNESCO World Heritage Site since 1991.</p>
+          </article>
+          <article class="card">
+            <span class="label">Inhambane</span>
+            <h3>Bazaruto Archipelago</h3>
+            <p>Islands of towering dunes, freshwater lakes and seagrass meadows off Vilankulo, protected as a national park since 1971.</p>
+          </article>
+          <article class="card">
+            <span class="label">Maputo</span>
+            <h3>Inhaca Island</h3>
+            <p>At the mouth of Maputo Bay, with coral reefs, mangroves and a marine biology station run by Eduardo Mondlane University.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="section" aria-labelledby="res-h">
+      <div class="wrap split">
+        <div class="stack">
+          <span class="label">Natural resources</span>
+          <h2 id="res-h">Gas, coal, rubies and farmland</h2>
+          <p class="prose">Most Mozambicans make a living from farming, largely on small family plots of maize, cassava, beans and groundnuts. The country's mineral and energy wealth has grown fast since 2000, though it has created relatively few jobs.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Natural gas</dt><dd>Rovuma Basin<small>Very large offshore fields off Cabo Delgado; exports began in 2022</small></dd></div>
+          <div><dt>Coal</dt><dd>Moatize, Tete<small>Large open-cast mines, exported through Beira and Nacala</small></dd></div>
+          <div><dt>Gemstones</dt><dd>Montepuez rubies<small>Cabo Delgado holds one of the world's most important ruby deposits</small></dd></div>
+          <div><dt>Minerals</dt><dd>Graphite &amp; heavy sands<small>Graphite at Balama; titanium-bearing sands at Moma</small></dd></div>
+          <div><dt>Energy</dt><dd>Hydropower<small>Cahora Bassa supplies Mozambique and its neighbours</small></dd></div>
+          <div><dt>Farm exports</dt><dd>Cashews, sugar, tobacco<small>Plus cotton, bananas and prawns</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <nav class="next-page" aria-label="More pages">
+        <a href="history.html"><span>Previous</span>← History</a>
+        <a href="wildlife.html" style="text-align:right"><span>Next</span>Wildlife →</a>
+      </nav>
+    </div>
+  </main>
+
+  <div class="capulana thin" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <h2>Mozambique Country Guide</h2>
+        <p>An independent, non-commercial guide to the history, land, wildlife, languages and peoples of Mozambique.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="history.html">History</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a href="wildlife.html">Wildlife</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="peoples.html">Peoples &amp; Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About the data</h3>
+        <p>Province boundaries: geoBoundaries (CC BY 4.0). Rivers, lakes and neighbouring countries: Natural Earth. Language figures: 2017 national census. Population figures are rounded estimates.</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">Kanimambo · Koxukhuru · Obrigado for reading.</div>
+  </footer>
+
+  <script src="map-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
