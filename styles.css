@@ -254,7 +254,7 @@ a:hover { color: var(--accent-strong); }
   flex-shrink: 0;
 }
 .brand:hover { color: var(--ink); }
-.brand svg { width: 34px; height: 24px; flex-shrink: 0; border-radius: 2px; }
+.brand img { display: block; width: 36px; height: 24px; flex-shrink: 0; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); }
 .brand small {
   display: block;
   font-family: var(--font-mono);

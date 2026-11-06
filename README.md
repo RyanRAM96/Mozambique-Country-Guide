@@ -34,6 +34,7 @@ Then visit `http://localhost:8000`.
 - `styles.css`: design tokens (light and dark), layout, and every component
 - `script.js`: navigation, the map renderer, province panel, park map, card filters, era tracking, the language chart and the quiz. Each module checks for its own markup, so one file serves every page.
 - `map-data.js`: projected SVG paths for provinces, neighbouring countries, lakes and rivers
+- `flag.svg`: the flag of Mozambique, used as the logo in the page header. From [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique.svg) (public domain).
 
 ## Map data
 
@@ -41,4 +42,4 @@ Province boundaries come from [geoBoundaries](https://www.geoboundaries.org/) (g
 
 ## Notes
 
-The flag on the home page is a simplified drawing. Language shares are from the 2017 census as summarised in the CIA World Factbook; other figures are rounded and cited in the text.
+The header logo is the official flag (`flag.svg`); the larger flag in the home page's "Reading the flag" section is a simplified drawing. Language shares are from the 2017 census as summarised in the CIA World Factbook; other figures are rounded and cited in the text.
