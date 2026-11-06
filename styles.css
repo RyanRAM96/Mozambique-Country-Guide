@@ -13,6 +13,7 @@
   --ink-2: #3a4f48;
   --muted: #5f736b;
   --line: #d0dcd6;
+  --swatch-edge: #a9b9b1;
 
   /* Accents taken from the flag, used with restraint */
   --accent: #00695a;
@@ -72,6 +73,7 @@
     --ink-2: #b7c9c1;
     --muted: #8ea39a;
     --line: #273a33;
+    --swatch-edge: #8ea39a;
     --accent: #4cc3a9;
     --accent-strong: #7ad8c3;
     --on-accent: #062019;
@@ -102,6 +104,7 @@
   --ink-2: #b7c9c1;
   --muted: #8ea39a;
   --line: #273a33;
+  --swatch-edge: #8ea39a;
   --accent: #4cc3a9;
   --accent-strong: #7ad8c3;
   --on-accent: #062019;
@@ -799,7 +802,7 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var
 .flag-block img { display: block; width: 100%; height: auto; border-radius: 3px; box-shadow: 0 0 0 1px var(--line); }
 .flag-key { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .flag-key li { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 12px; align-items: baseline; color: var(--ink-2); }
-.flag-key .sw { width: 14px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); transform: translateY(2px); }
+.flag-key .sw { width: 14px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px var(--swatch-edge); transform: translateY(2px); }
 .flag-key strong { color: var(--ink); font-family: var(--font-display); font-weight: 600; }
 @media (max-width: 760px) { .flag-block { grid-template-columns: 1fr; } }
 
