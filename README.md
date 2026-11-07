@@ -27,7 +27,7 @@ Then visit `http://localhost:8000`.
 | `geography.html` | Interactive province map with layer toggles and a province panel, landforms, rivers and lakes, climate and cyclones, coast and islands, natural resources |
 | `wildlife.html` | Map of parks and reserves linked to their descriptions, the Gorongosa recovery and its tuskless elephants, 20 species with a habitat filter and six primates, each with a photo, a seasonal calendar, photo credits |
 | `languages.html` | Bar chart of first languages from the 2017 census (with a table view), where each language is spoken, Mozambican Portuguese words, greetings in five languages, language policy |
-| `peoples.html` | Sixteen peoples with a region filter, other communities, religion, and culture: music, art, dress, food, literature and sport |
+| `peoples.html` | Sixteen peoples with a region filter, other communities, religion, culture (music, art, dress, food, literature and sport), and a cuisine section with photos of eight dishes |
 
 ## Files
 
@@ -35,6 +35,7 @@ Then visit `http://localhost:8000`.
 - `script.js`: navigation, the map renderer, province panel, park map, card filters, era tracking, the language chart and the quiz. Each module checks for its own markup, so one file serves every page.
 - `map-data.js`: projected SVG paths for provinces, neighbouring countries, lakes and rivers
 - `images/wildlife/`: 26 animal photos (500 px wide) from Wikimedia Commons. Each photographer and licence is credited in the "Photo credits" section at the bottom of `wildlife.html`.
+- `images/food/`: 8 photos of Mozambican dishes from Wikimedia Commons, credited at the bottom of `peoples.html`.
 - `flag.svg`: the flag of Mozambique, used as the header logo and in the home page's "Reading the flag" section. From [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique.svg) (public domain).
 
 ## Map data
