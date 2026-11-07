@@ -25,7 +25,7 @@ Then visit `http://localhost:8000`.
 | `index.html` | Hero with a region-shaded province map, twelve key facts, five turning points, section links, the flag explained, a seven-question quiz |
 | `history.html` | Ten eras from the first farmers to 2025 as a dated timeline with sticky era navigation, key figures, and the public holidays that mark historical events |
 | `geography.html` | Interactive province map with layer toggles and a province panel, landforms, rivers and lakes, climate and cyclones, coast and islands, natural resources |
-| `wildlife.html` | Map of parks and reserves linked to their descriptions, the Gorongosa recovery and its tuskless elephants, 20 species with a habitat filter, a seasonal calendar |
+| `wildlife.html` | Map of parks and reserves linked to their descriptions, the Gorongosa recovery and its tuskless elephants, 20 species with a habitat filter, a primates section, a seasonal calendar |
 | `languages.html` | Bar chart of first languages from the 2017 census (with a table view), where each language is spoken, Mozambican Portuguese words, greetings in five languages, language policy |
 | `peoples.html` | Sixteen peoples with a region filter, other communities, religion, and culture: music, art, dress, food, literature and sport |
 
